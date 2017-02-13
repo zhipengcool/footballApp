@@ -1,0 +1,45 @@
+	
+<div class="wrap-flex">	
+	<header class="header">
+		<ul>
+			<li><i class="yo-ico menu">&#xe745;</i></li>
+			<li>
+				<p>
+					<span class="active">热点</span>
+					<span>关注</span>
+				</p>
+			</li>
+			<li><i class="yo-ico sm">&#xe684;</i></li>
+		</ul>
+	</header>
+	<section class="section">
+		<ul  id="title">
+			<li ng-repeat="item in data" ng-click=fn($index) ng-class="{active:$first}">{{item}}</li>
+		</ul>
+		<div class="cont" id="cont">	
+			<div>
+				<div class="swiper-container home-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="main">
+								<div class="main-one" ng-repeat="i in mock">
+									<img src="{{i.img}}">
+									<b>{{i.title}}</b>
+								</div>
+								
+							</div>
+						</div>
+						<div class="swiper-slide">
+							足球生活
+						</div>
+						<div class="swiper-slide">
+							足球美女
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+	
+	
